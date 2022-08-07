@@ -12,7 +12,7 @@ public class AddScore : MonoBehaviour,ICoin
     /// <summary>ゲット出来るコイン量</summary>
     [SerializeField]
     [Header("ゲット出来るコイン量")]
-    int _coin;
+    const int _coin = 10;
 
     public void GetCoin(int coin) => ScoreManager.Instance.TotalScore(Coin);
 }

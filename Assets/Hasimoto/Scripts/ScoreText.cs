@@ -11,9 +11,6 @@ public class ScoreText : MonoBehaviour
     [SerializeField]
     [Header("スコアテキスト")]
     Text _scoreText;
+
     void Start() => _scoreText.text = ScoreManager.Instance.Coin.ToString();
-    private void Update()
-    {
-        
-    }
 }
