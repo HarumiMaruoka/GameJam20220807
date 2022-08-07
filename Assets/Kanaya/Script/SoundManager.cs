@@ -7,17 +7,9 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance = null;
 
     public AudioSource TitleAudioSource => _titleAudioSource;
-    public AudioClip ResultAudioSource => _resultAudioSource;
-    public AudioClip GameAudioSource => _gameAudioSource;
 
     [SerializeField]
     [Header("タイトルシーンの音源")] AudioSource _titleAudioSource;
-
-    [SerializeField]
-    [Header("ゲームシーンの音源")] AudioClip _gameAudioSource;
-
-    [SerializeField]
-    [Header("リザルトシーンの音源")] AudioClip _resultAudioSource;
 
     /// <summary>ビルド時に呼ばれる</summary>
     private void Awake()
@@ -34,7 +26,7 @@ public class SoundManager : MonoBehaviour
     }
 
     ///<summary>タイトル画面時のBGM</summary>
-    public void PlayTitleMusic() => _titleAudioSource.Play();
+    public void PlayTitleMusic(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
 
     ///<summary>ゴール時のSE</summary>
     public void PlayGoalSe(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
@@ -46,8 +38,8 @@ public class SoundManager : MonoBehaviour
     public void PlayResultMusic(AudioClip clip)
     {
         _titleAudioSource.Stop();//今流れている音源を止める
-        _titleAudioSource.clip = ResultAudioSource;//リザルト音源に変更
-        _titleAudioSource.PlayOneShot(ResultAudioSource);//リザルト音源を再生
+        _titleAudioSource.PlayOneShot(clip);//リザルト音源に変更
+        //_titleAudioSource.PlayOneShot(ResultAudioSource);//リザルト音源を再生
     }
 
     ///<summary>コイン取得時のSE</summary>
