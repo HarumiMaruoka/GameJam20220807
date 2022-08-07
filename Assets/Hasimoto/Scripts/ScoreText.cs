@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class ScoreText : MonoBehaviour
 {
     /// <summary>スコアテキスト</summary>
-    [SerializeField]
-    [Header("スコアテキスト")]
-    Text _scoreText;
+    //[SerializeField]
+    //[Header("スコアテキスト")]
+    //Text _scoreText;
 
-    void Start() => _scoreText.text = ScoreManager.Instance.Coin.ToString();
+    //void Start() => _scoreText.text = ScoreManager.Instance.Coin.ToString();
 }
