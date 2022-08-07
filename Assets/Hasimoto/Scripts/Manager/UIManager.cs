@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 /// <summary>
 /// UIManagerクラス
@@ -9,7 +10,10 @@ public class UIManager : MonoBehaviour
 {
     /// <summary>UIManagerのインスタンス</summary>
     public static UIManager Instance = null;
-    
+
+    /// <summary>シーンの名前</summary>
+    public string SceneName => _sceneName;
+
     /// <summary>カンウントダウン変数</summary>
     [SerializeField]
     float _countdown = 0.0f;
@@ -17,6 +21,9 @@ public class UIManager : MonoBehaviour
     /// <summary>カンウントダウンテキスト</summary>
     [SerializeField]
     Text _timeText;
+
+    /// <summary>シーンの名前</summary>
+    string _sceneName;
 
     /// <summary>今ポーズ中かを判断する</summary>
     bool isPose = false;
@@ -60,6 +67,8 @@ public class UIManager : MonoBehaviour
         if (_countdown <= 0)
         {
             _timeText.text = "ゲームオーバー";
+            Scenemanager.Instance.LoadScene(SceneName);
         }
     }
+    
 }
