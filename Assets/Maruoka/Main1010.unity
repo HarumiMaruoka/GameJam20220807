@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3975915662099512446, guid: 23068f111e46d65428cd2825fdd0afbf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: 2.39
       objectReference: {fileID: 0}
     - target: {fileID: 3975915662099512446, guid: 23068f111e46d65428cd2825fdd0afbf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3975915662099512446, guid: 23068f111e46d65428cd2825fdd0afbf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: -4.93
       objectReference: {fileID: 0}
     - target: {fileID: 3975915662099512446, guid: 23068f111e46d65428cd2825fdd0afbf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -287,16 +287,16 @@ MonoBehaviour:
   _height: 1
   _lines:
   - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
+  - 11111101011
+  - 101111110011
+  - 111111101011
+  - 111010011101
+  - 111101111101
+  - 111110011001
+  - 111101111111
+  - 110111110111
+  - 111011111111
+  - 110111011111
   - 111111111111
   _dontMoveCubePrefab: {fileID: 7516970183292037159, guid: 99e608edc295cb943a060173f9a88c3f, type: 3}
   _canMoveCubePrefab: {fileID: 0}
@@ -525,16 +525,16 @@ MonoBehaviour:
   _height: 2
   _lines:
   - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
-  - 111111111111
+  - 100002000011
+  - 121001000001
+  - 102002000001
+  - 102002000001
+  - 100001110101
+  - 120000200001
+  - 100102110111
+  - 100000200001
+  - 102012001201
+  - 100000000001
   - 111111111111
   _dontMoveCubePrefab: {fileID: 7516970183292037159, guid: 99e608edc295cb943a060173f9a88c3f, type: 3}
   _canMoveCubePrefab: {fileID: 2532373698965978990, guid: 80eba0ef638ef6345b09fa6fc02b3160, type: 3}
