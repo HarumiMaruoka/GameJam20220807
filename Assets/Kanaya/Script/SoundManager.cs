@@ -6,11 +6,6 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance = null;
 
-    public AudioClip GoalSe => _goalSe;
-    public AudioClip StartSe => _startSe;
-    public AudioClip ClickSe => _clickSe;
-    public AudioClip CoinGetSe => _coinGetSe;
-
     public AudioSource TitleAudioSource => _titleAudioSource;
     public AudioClip ResultAudioSource => _resultAudioSource;
     public AudioClip GameAudioSource => _gameAudioSource;
@@ -23,18 +18,6 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField]
     [Header("リザルトシーンの音源")] AudioClip _resultAudioSource;
-
-    [SerializeField]
-    [Header("ゴール時の音源")] AudioClip _goalSe;
-    
-    [SerializeField]
-    [Header("スタート時の音源")] AudioClip _startSe;
-
-    [SerializeField]
-    [Header("クリック時の音源")] AudioClip _clickSe;
-
-    [SerializeField]
-    [Header("コイン取得時の音源")] AudioClip _coinGetSe;
 
     /// <summary>ビルド時に呼ばれる</summary>
     private void Awake()
@@ -54,13 +37,13 @@ public class SoundManager : MonoBehaviour
     public void PlayTitleMusic() => _titleAudioSource.Play();
 
     ///<summary>ゴール時のSE</summary>
-    public void PlayGoalSe() => _titleAudioSource.PlayOneShot(GoalSe);
+    public void PlayGoalSe(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
 
     ///<summary>ゲームプレイ時のBGM</summary>
-    public void PlayGameMusic() => _titleAudioSource.PlayOneShot(GameAudioSource);
+    public void PlayGameMusic(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
 
     ///<summary>リザルト画面時のBGM</summary>
-    public void PlayResultMusic()
+    public void PlayResultMusic(AudioClip clip)
     {
         _titleAudioSource.Stop();//今流れている音源を止める
         _titleAudioSource.clip = ResultAudioSource;//リザルト音源に変更
@@ -68,8 +51,8 @@ public class SoundManager : MonoBehaviour
     }
 
     ///<summary>コイン取得時のSE</summary>
-    public void PlayGetCoinSe() => _titleAudioSource.PlayOneShot(CoinGetSe);
+    public void PlayGetCoinSe(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
 
     ///<summary>ゲームプレイ時のSE</summary>
-    public void PlayStartMusic() => _titleAudioSource.PlayOneShot(StartSe);
+    public void PlayStartMusic(AudioClip clip) => _titleAudioSource.PlayOneShot(clip);
 }
