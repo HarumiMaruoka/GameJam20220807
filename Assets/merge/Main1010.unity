@@ -876,7 +876,7 @@ PrefabInstance:
     - target: {fileID: 6419300998506397417, guid: 4776ea99aa2ecfc43afb3cd479e42f56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1748555093}
     - target: {fileID: 6419300998506397417, guid: 4776ea99aa2ecfc43afb3cd479e42f56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClickButton_ReLoadScene
@@ -884,7 +884,7 @@ PrefabInstance:
     - target: {fileID: 6419300999060651011, guid: 4776ea99aa2ecfc43afb3cd479e42f56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1748555093}
     - target: {fileID: 6419300999060651011, guid: 4776ea99aa2ecfc43afb3cd479e42f56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClickButton_BackToTitle
